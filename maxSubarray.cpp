@@ -1,3 +1,11 @@
+//	;+-------------------------------------------+
+//	;|     Analysis of Algorithms
+//	;|   ========================================
+//	;|   Max SubArray Brute Force
+//	;|   ========================================
+//	;|   ========================================
+//	;+-------------------------------------------+
+
 #include <iostream>
 #include <cstdlib> 
 #include <ctime>
@@ -41,6 +49,7 @@ int main(){
 	
 	return 0;
 }
+// Brute force algoritham
 void find_maximum_subarray_brute(int array[], int low,int high, int total, int size) {
 
 
@@ -66,6 +75,8 @@ void find_maximum_subarray_brute(int array[], int low,int high, int total, int s
     }
 }
 
+
+// random number generator
 void RandomArray(int array[], int size){
 	srand((unsigned)time(0));      //should give different values after every execution
      
