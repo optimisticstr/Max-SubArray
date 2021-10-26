@@ -12,7 +12,7 @@
 #include <fstream>
 using namespace std;
 
-// ProtoTypes
+// funtion ProtoTypes
 void find_maximum_subarray_brute(int array[], int low,int high, int total, int size);
 void RandomArray(int array[], int size);
 
@@ -28,9 +28,10 @@ int main(){
 	
 	RandomArray(array, size); // creating array of random numbers
 	
-	start = clock();
+	
+	start = clock(); //start time
 	find_maximum_subarray_brute(array, low, high, sum, size);
-	end = clock();
+	end = clock(); //end time
 	
 	
 	cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
